@@ -7,11 +7,6 @@
 
 > C++ Ogre3D VSCode CMake OSX
 
-## Installation
-
-- All the `code` required to get started
-- Images of what it should look like
-
 ### Setup
 
 - First follow these [steps](https://ogrecave.github.io/ogre/api/1.10/setup.html) to build Ogre3D engine on your machine using CMake
