@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Emscripten</title>
+    <script type="text/javascript" src="build/0_Bootstrap/client.js"></script>
+</head>
+<body>
+Check browser console.
+
+<script type="text/javascript">
+window.onload = function() {
+    setTimeout(()=>{
+        var instance = new Module.Application(); 
+	    instance.Initialize();
+	    instance.SayHello();
+    }, 200)
+
+}
+</script>
+</body>
+</html>
