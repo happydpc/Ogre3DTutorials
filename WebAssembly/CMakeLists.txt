@@ -8,4 +8,4 @@ project(Ogre3DTutorialsWeb)
 #
 
 add_definitions("-std=c++11")
-add_subdirectory("${CMAKE_SOURCE_DIR}/0_Bootstrap/")
+add_subdirectory("${CMAKE_SOURCE_DIR}/EmscriptenTest/")
