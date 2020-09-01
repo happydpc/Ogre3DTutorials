@@ -1,11 +1,9 @@
 {
 	"folders": [
 		{
-			"name": "Native",
 			"path": "Native"
 		},
 		{
-			"name": "WebAssembly",
 			"path": "WebAssembly"
 		}
 	],

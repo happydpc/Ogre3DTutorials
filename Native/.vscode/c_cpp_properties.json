@@ -1,29 +1,15 @@
 {
   "configurations": [
       {
-          "name": "Mac",
+          "name": "OSX",
           "includePath": [
-              "${workspaceFolder}/../sdk/include/OGRE",
-              "/Users/gbranco/personal/emsdk/upstream/emscripten/system/include/**",
-              "/Users/gbranco/personal/emsdk/upstream/emscripten/system/lib/**",
-              "/Users/gbranco/personal/emsdk/upstream/emscripten/system/local/**"
+              "${workspaceFolder}/../OsxSDK/include/**"
           ],
           "defines": [ ],
           "macFrameworkPath": [
-              "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks",
-              "${workspaceFolder}/../sdk/lib/macosx/Release"
+              "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
           ],
           "compilerPath": "/usr/bin/clang",
-          "cStandard": "c11",
-          "cppStandard": "c++17",
-          "intelliSenseMode": "clang-x64"
-      },
-      {
-          "name": "Linux",
-          "includePath": [
-          ],
-          "defines": [ ],
-          "compilerPath": "/usr/bin/clang++",
           "cStandard": "c11",
           "cppStandard": "c++17",
           "intelliSenseMode": "clang-x64"

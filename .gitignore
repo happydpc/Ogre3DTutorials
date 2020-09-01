@@ -1,3 +1,4 @@
 build
-sdk
+OsxSDK
+WebAssemblySDK
 WebAssembly/.vscode/chrome

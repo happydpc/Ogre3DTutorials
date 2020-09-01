@@ -2,6 +2,8 @@
   "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
   "cmake.generator": "Unix Makefiles",
   "C_Cpp.default.systemIncludePath": [
+    "${workspaceFolder}/../WebAssemblySDK/include/OGRE/**",
+    "${workspaceFolder}/../WebAssemblySDK/lib/**",
     "/Users/gbranco/personal/emsdk/upstream/emscripten/system/include/**",
     "/Users/gbranco/personal/emsdk/upstream/emscripten/system/lib/**",
   ],

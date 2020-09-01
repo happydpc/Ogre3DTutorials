@@ -1,8 +1,3 @@
 {
-  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-  "C_Cpp.default.includePath":[
-    "/Users/gbranco/personal/emsdk/upstream/emscripten/system/include/**",
-    "/Users/gbranco/personal/emsdk/upstream/emscripten/system/lib/**",
-    "/Users/gbranco/personal/emsdk/upstream/emscripten/system/local/**",
-  ],
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }
