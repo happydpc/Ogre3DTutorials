@@ -7,5 +7,6 @@ include_directories("${CMAKE_SOURCE_DIR}/../WebAssemblySDK/inlcude")
 link_directories("${CMAKE_SOURCE_DIR}/../WebAssemblySDK/lib")
 set(OGRE_DIR "${CMAKE_SOURCE_DIR}/../WebAssemblySDK/lib/OGRE/cmake/")
 
-add_subdirectory("${CMAKE_SOURCE_DIR}/EmscriptenTest/")
 add_subdirectory("${CMAKE_SOURCE_DIR}/0_Bootstrap/")
+add_subdirectory("${CMAKE_SOURCE_DIR}/EmscriptenTest/")
+add_subdirectory("${CMAKE_SOURCE_DIR}/EmscriptenSDL/")

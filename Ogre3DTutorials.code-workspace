@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "WebAssembly"
+		},
+		{
+			"path": "../ogre/Samples/Emscripten"
 		}
 	],
 	"settings": {

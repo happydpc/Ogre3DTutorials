@@ -4,7 +4,9 @@ const fs = require('fs');
 const path = require('path');
 // you can pass the parameter in the command line. e.g. node test/path/test.html 3000
 const port = 8000;
-const cwd = process.argv[2] || ''
+const webroot = path.dirname(process.env.LAUNCH_TARGET_PATH || '')
+const htmlFile = path.basename(process.env.LAUNCH_TARGET_PATH || '')
+const html = path.extname(htmlFile).toLowerCase() === '.html' ? htmlFile : `index.html`
 
 // maps file extention to MIME types
 // full list can be found here: https://www.freeformatter.com/mime-types-list.html
@@ -38,7 +40,7 @@ http.createServer(function (req, res) {
   // e.g curl --path-as-is http://localhost:9000/../fileInDanger.txt
   // by limiting the path to current directory only
   const sanitizePath = path.normalize(parsedUrl.pathname).replace(/^(\.\.[\/\\])+/, '');
-  let pathname = path.join(__dirname, cwd, sanitizePath);
+  let pathname = path.join((`${webroot}/` || __dirname), sanitizePath);
 
   fs.exists(pathname, function (exist) {
     if(!exist) {
@@ -50,7 +52,7 @@ http.createServer(function (req, res) {
 
     // if is a directory, then look for index.html
     if (fs.statSync(pathname).isDirectory()) {
-      pathname += '/index.html';
+      pathname += html;
     }
 
     // read file from file system
@@ -71,4 +73,7 @@ http.createServer(function (req, res) {
 
 }).listen(parseInt(port));
 
-console.log(`Server listening on port ${port}`);
+console.log(`Server listening on port ${port}`) 
+console.log(`WEBROOT:${webroot}`)
+console.log(`HTML:${html}`)
+console.log(`LAUNCH_TARGET_PATH:${process.env.LAUNCH_TARGET_PATH}`);

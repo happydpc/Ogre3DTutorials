@@ -5,13 +5,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "DebugIndexHTML",
+      "name": "DebugEmscripten",
       "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:8000/index.html", 
+      "url": "http://localhost:8000/", 
       "userDataDir": "${workspaceRoot}/.vscode/chrome",
       "internalConsoleOptions": "openOnSessionStart",
-      "preLaunchTask": "StartDevServer"
+      "preLaunchTask": "StartDevServer",
+      "postDebugTask": "StopDevServer"
     }
   ]
 }

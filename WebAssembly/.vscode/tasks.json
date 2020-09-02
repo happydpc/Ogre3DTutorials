@@ -8,7 +8,10 @@
         "${workspaceFolder}/devServer.js"
       ],
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "LAUNCH_TARGET_PATH": "${command:cmake.launchTargetPath}"
+        }
       },
       "isBackground": true,
       "problemMatcher": [
@@ -24,8 +27,15 @@
 					}
 				}
       ]
+    },
+    {
+      "label": "StopDevServer",
+      "type": "process",
+      "command":"${command:workbench.action.terminal.kill}",
+      "args": [
+          "StartDevServer"
+      ]
     }
-
   ],
   "version": "2.0.0"
 }
