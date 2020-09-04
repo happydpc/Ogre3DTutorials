@@ -7,7 +7,7 @@
             ],
             "defines": [],
             "forcedInclude": [],
-            "compilerPath": "/Users/gbranco/personal/emsdk/upstream/emscripten/em++",
+            "compilerPath": "/Users/gbranco/personal/emsdk/fastcomp/emscripten/emcc",
             "cStandard": "c11",
             "cppStandard": "c++11",
             "intelliSenseMode": "clang-x64"
