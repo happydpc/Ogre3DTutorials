@@ -17,12 +17,17 @@ target_link_libraries(0_Bootstrap OgreBites ${OGRE_LIBRARIES})
 add_executable(BasicTutorial1 BasicTutorial1.cpp)
 target_link_libraries(BasicTutorial1 OgreBites ${OGRE_LIBRARIES})
 
+add_executable(BasicTutorial2 BasicTutorial2.cpp)
+target_link_libraries(BasicTutorial2 OgreBites ${OGRE_LIBRARIES})
+
 file(COPY
     "media" 
     DESTINATION "${CMAKE_BINARY_DIR}/0_Bootstrap")
     
 file(COPY
     "${OGRE_SDK_DIR}/share/OGRE/Media/models/ogrehead.mesh"
+    "${OGRE_SDK_DIR}/share/OGRE/Media/models/ninja.mesh"
+    "${OGRE_SDK_DIR}/share/OGRE/Media/models/ninja.skeleton"
     "${OGRE_SDK_DIR}/share/OGRE/Media/packs/SdkTrays.zip"
     "${OGRE_SDK_DIR}/share/OGRE/Media/packs/Sinbad.zip"
     DESTINATION ${MEDIA_DIR})
@@ -40,6 +45,8 @@ file(COPY
     "${OGRE_SDK_DIR}/share/OGRE/Media/materials/textures/spheremap.png"
     "${OGRE_SDK_DIR}/share/OGRE/Media/materials/textures/GreenSkin.jpg"
     "${OGRE_SDK_DIR}/share/OGRE/Media/materials/textures/tusk.jpg"
+    "${OGRE_SDK_DIR}/share/OGRE/Media/materials/textures/nskingr.jpg"
+    "${OGRE_SDK_DIR}/share/OGRE/Media/materials/textures/rockwall.tga"
     DESTINATION "${MEDIA_DIR}/materials/textures")
 
 file(COPY
